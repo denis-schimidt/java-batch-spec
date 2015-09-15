@@ -14,6 +14,8 @@ public class Carro implements Serializable {
 		this.descricao = descricao;
 		this.ano = ano;
 	}
+	
+	public Carro() {}
 
 	public Long getId() {
 		return id;

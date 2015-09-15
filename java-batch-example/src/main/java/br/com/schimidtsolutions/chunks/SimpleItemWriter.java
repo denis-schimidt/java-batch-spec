@@ -23,12 +23,12 @@ public class SimpleItemWriter extends AbstractItemWriter {
 		for (Object item : items) {
 			writer.writeObject( item );
 		}
+		
+		writer.flush();
 	}
 	
 	@Override
 	public void close() throws Exception {
-		super.close();
-		writer.flush();
 		writer.close();
 	}
 }
