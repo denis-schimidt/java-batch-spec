@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<job id="simple-chunk-job" version="1.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/jobXML_1_0.xsd ">
+	
+	<step id="chunk-step">
+		<chunk item-count="10">
+			<reader ref="br.com.schimidtsolutions.chunks.SimpleItemReader"/>
+			<processor ref="br.com.schimidtsolutions.chunks.SimpleItemProcessor"/>
+			<writer ref="br.com.schimidtsolutions.chunks.SimpleItemWriter"/>
+		</chunk>
+	</step>
+</job>
