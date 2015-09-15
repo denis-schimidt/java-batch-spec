@@ -1,1 +1,1 @@
-# java-batch-spec
+# Java Batch Spec (JEE 7)
